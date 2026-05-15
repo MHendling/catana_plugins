@@ -1,0 +1,17 @@
+
+{
+    "name": "run_rfdiffusion3",
+    "description": "This plugin enables the user to run RFdiffusion3 on a specified PDB file",
+    "version": "1.0.0",
+    "author": "Michaela Hendling",
+    "thisUrlTemplate": "https://raw.githubusercontent.com/MHendling/catana-plugins/main/{name}/{file}",
+    "depsUrlTemplate": "",
+    "scripts": [
+        "rfd3_ui.jspy",
+        "run_rfd3.jspy",
+        "check_status.jspy",
+        "download.jspy"
+    ],
+    "initScript": "rfd3_ui.jspy",
+    "dependencies": []
+}
