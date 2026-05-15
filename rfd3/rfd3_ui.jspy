@@ -1,0 +1,48 @@
+%
+pdb_file = {
+    type: "file",
+    name: "pdb_file",
+    accept: ".pdb"
+}
+
+spec_file = {
+    type: "file",
+    name: "spec_file",
+    accept: ".json"
+}
+
+label = {
+    type: "text",
+    name: "info",
+    content: "Upload PDB and RFD3 spec JSON"
+}
+
+submit_button = {
+    type: "button",
+    name: "run-rfd3",
+    content: "Run RFD3",
+    callback: "run_rfd3.jspy"
+}
+
+status_button = {
+    type: "button",
+    name: "check-status",
+    content: "Check Status",
+    callback: "check_status.jspy"
+}
+
+download_button = {
+    type: "button",
+    name: "download",
+    content: "Download results",
+    callback: "download.jspy"
+}
+
+add_modal_window("RFD3 Generator", [
+    label,
+    pdb_file,
+    spec_file,
+    submit_button,
+    status_button,
+    download_botton
+])
