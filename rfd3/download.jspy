@@ -1,0 +1,5 @@
+job_id = get("job_id")
+
+open_url(
+    f"http://localhost:8000/jobs/{job_id}/download"
+)
