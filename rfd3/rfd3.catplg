@@ -1,6 +1,6 @@
 
 {
-    "name": "run_rfdiffusion3",
+    "name": "rfd3",
     "description": "This plugin enables the user to run RFdiffusion3 on a specified PDB file",
     "version": "1.0.0",
     "author": "Michaela Hendling",
