@@ -1,0 +1,14 @@
+pdb = get("pdb_file")
+spec = get("spec_file")
+
+response = http_post(
+    url="http://localhost:8000/generate/rfd3",
+    files={
+        "pdb_file": pdb,
+        "spec_file": spec
+    }
+)
+
+job_id = response["job_id"]
+
+set("job_id", job_id)
