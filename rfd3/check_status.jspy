@@ -1,0 +1,7 @@
+job_id = get("job_id")
+
+status = http_get(
+    url=f"http://localhost:8000/jobs/{job_id}"
+)
+
+set("status_text", status["status"])
